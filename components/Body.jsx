@@ -38,7 +38,7 @@ const Body = ({ data }) => {
             <p className="p-2 md:p-0">
               Self taught front end and backend developer <br /> who is able to
               realise projects from the ground up. <br /> I am well versed in
-              javascript language and <br /> I don't give up until I solve the
+              javascript language and <br /> I dont give up until I solve the
               problem.
             </p>
           </div>
