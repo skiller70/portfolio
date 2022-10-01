@@ -6,7 +6,7 @@ const Body = ({ data }) => {
   return (
     <>
       {/* LANDING PAGE */}
-      <div className="flex-col border-red-600 border-2 md:flex-row flex w-full h-[100vh] md:h-[100vh] ">
+      <div className="flex-col md:flex-row flex w-full h-[100vh] md:h-[100vh] ">
         <div className="flex  justify-center  items-center md:flex-grow">
           <div className=" p-2 md:p-0 mb-2 flex flex-col">
             <motion.h1
@@ -38,7 +38,7 @@ const Body = ({ data }) => {
             <p className="p-2 md:p-0">
               Self taught front end and backend developer <br /> who is able to
               realise projects from the ground up. <br /> I am well versed in
-              javascript language and <br /> I dont give up until I solve the
+              javascript language and <br /> I don't give up until I solve the
               problem.
             </p>
           </div>
@@ -56,7 +56,7 @@ const Body = ({ data }) => {
 
       {/* ABOUT ME */}
 
-      <div className="border-green-600 border-2   flex flex-col  md:flex-row    h-[70vh] md:h-[100vh]  w-screen">
+      <div className=" flex flex-col  md:flex-row    h-[70vh] md:h-[100vh]  w-screen">
         <div className="order-last md:order-first   justify-center flex items-center  md:pl-12 pl-0 ">
           <Image src="/aboutMe.png" width="500" height="450"></Image>
         </div>
@@ -86,31 +86,32 @@ const Body = ({ data }) => {
         My Skills
       </div>
 
-      <div className="w-full flex  flex-col md:flex-row border-red-500 border-2 h-[100vh]">
-        <div className="border-2 flex  flex-col  flex-grow">
+      <div className="w-full flex  flex-col md:flex-row  h-[100vh]">
+        <div className=" flex  flex-col  flex-grow">
           {/* 2BOX */}
           <div className="flex-col   items-center flex-grow flex md:flex-row">
             <div className="w-[30%] flex justify-center ">
-             
-                <svg
-                  className=" w-[3rem] h-[3rem]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
-                  />
-                </svg>
-              </div>
-              <div className=" flex justify-center md:justify-start w-[100%] md:w-[50%]">
-                <h1>aaasadasasdaasdasdaaaa <br></br>aaaasaasdasdasaaaaaasdasdasdasasd</h1>
-              </div>
-           
+              <svg
+                className=" w-[3rem] h-[3rem]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
+                />
+              </svg>
+            </div>
+            <div className=" flex justify-center md:justify-start w-[100%] md:w-[50%]">
+              <h1>
+                aaasadasasdaasdasdaaaa <br></br>
+                aaaasaasdasdasaaaaaasdasdasdasasd
+              </h1>
+            </div>
           </div>
 
           <div className="flex-col items-center flex-grow flex md:flex-row">
@@ -153,13 +154,11 @@ const Body = ({ data }) => {
                 />
               </svg>
             </div>
-            <div className=" flex justify-center md:justify-start w-[100%] md:w-[50%] "  >
+            <div className=" flex justify-center md:justify-start w-[100%] md:w-[50%] ">
               <h1>asdaaaaaaaaaaaaaaaaaaaaaaaaaasd</h1>
             </div>
           </div>
-
         </div>
-
 
         {/*  image 2BOX */}
 
