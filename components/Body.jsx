@@ -173,14 +173,14 @@ const Body = ({ data }) => {
           <div className="flex gap-x-2 md:gap-x-16  ">
             <Image src="/bootstrap.png" height="110" width="110"></Image>
 
-            <Image src="/tailwind.png" height="110" width="110"></Image>
-
             <Image src="/reactjs.png" height="110" width="110"></Image>
+
+            <Image src="/nextjs.png" height="110" width="110"></Image>
           </div>
           <div className="flex gap-x-2 md:gap-x-16  ">
             <Image src="/nodejs.png" height="110" width="110"></Image>
 
-            <Image src="/expressjs.png" height="80" width="80"></Image>
+            <Image src="/expressjs.png" height="110" width="110"></Image>
 
             <Image src="/mongodb.png" height="110" width="110"></Image>
           </div>
