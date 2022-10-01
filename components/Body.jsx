@@ -58,7 +58,7 @@ const Body = ({ data }) => {
 
       <div className=" flex flex-col  md:flex-row    h-[70vh] md:h-[100vh]  w-screen">
         <div className="order-last md:order-first   justify-center flex items-center  md:pl-12 pl-0 ">
-          <Image src="/aboutMe.png" width="500" height="450"></Image>
+          <Image src="/about.jpg" width="600" height="450"></Image>
         </div>
 
         <div className="flex md:w-[50%] justify-center md:mt-[7%] ">
