@@ -1,27 +1,38 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPaintBrush,
+  faMobile,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
 
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 const Body = ({ data }) => {
   return (
     <>
       {/* LANDING PAGE */}
-      <div className="flex-col md:flex-row flex w-full h-[100vh] md:h-[100vh] ">
-        <div className="flex  justify-center  items-center md:flex-grow">
+      <div className="flex-col md:flex-row flex  h-auto md:h-[100vh]  ">
+        <div className="flex mt-32  justify-center  items-center md:flex-grow">
           <div className=" p-2 md:p-0 mb-2 flex flex-col">
             <motion.h1
               initial={{ x: -360 }}
               animate={{ x: 0 }}
               transition={{ delay: 0.1 }}
-              className=" text-[2rem] m-0.5"
+              className=" font-title text-[2rem] m-0.5"
             >
               {" "}
-              i am karthik singh, a <br />
+              i am Lucky singh, a <br />
               <motion.span
                 initial={{ x: 0 }}
                 animate={{ x: -500 }}
                 transition={{ delay: 0.1 }}
-                className="text-[3rem]  text-[#360a3d]"
+                className="text-[4rem]   font-Secular text-[#581c87]"
               >
                 web developer{" "}
               </motion.span>
@@ -29,14 +40,19 @@ const Body = ({ data }) => {
             <motion.button
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="ml-1 p-2 rounded-xl self-start mb-2 bg-pink-500 text-white"
+              className="ml-1 p-2 rounded-xl self-start mb-2 bg-[#db2777] text-white"
             >
               {" "}
-              <Link href="/about">Know more</Link>
+              <Link href="/about">
+                <h2 className="font-Acme  font-bold text-[1.2rem] p-1.5">
+                  Know More
+                </h2>
+              </Link>
             </motion.button>
 
-            <p className="p-2 md:p-0">
-              Self taught front end and backend developer <br /> who is able to
+            <p className="p-2 tracking-wide mt-3 font-semibold text-[#334155] font-Josefin md:p-0 text-[1.5rem]">
+              i am Self taught programmer who is able to
+              <br />
               realise projects from the ground up. <br /> I am well versed in
               javascript language and <br /> I dont give up until I solve the
               problem.
@@ -56,7 +72,7 @@ const Body = ({ data }) => {
 
       {/* ABOUT ME */}
 
-      <div className=" flex flex-col  md:flex-row    h-[70vh] md:h-[100vh]  w-screen">
+      <div className=" flex flex-col  md:flex-row h-auto md:h-[100vh]   w-full">
         <div className="order-last md:order-first   justify-center flex items-center  md:pl-12 pl-0 ">
           <Image src="/about.jpg" width="600" height="450"></Image>
         </div>
@@ -82,93 +98,74 @@ const Body = ({ data }) => {
           width="1500"
           height="800"
         ></Image> */}
-      <div className=" mt-[10%]   md:mt-[0%]        flex flex-grow flex-row justify-center  text-[2rem] ">
+      <div className="  flex flex-grow flex-row justify-center  text-[2rem] ">
         My Skills
       </div>
 
-      <div className="w-full flex  flex-col md:flex-row  h-[100vh]">
+      <div className="flex  flex-col md:flex-row  h-auto md:h-[100vh]">
         <div className=" flex  flex-col  flex-grow">
           {/* 2BOX */}
-          <div className="flex-col   items-center flex-grow flex md:flex-row">
+          <div className="flex-col  mt-5 items-center flex-grow flex md:flex-row">
             <div className="w-[30%] flex justify-center ">
-              <svg
-                className=" w-[3rem] h-[3rem]"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
-                />
-              </svg>
+              <FontAwesomeIcon className="w-10 h-10" icon={faPaintBrush} />
             </div>
-            <div className=" flex justify-center md:justify-start w-[100%] md:w-[50%]">
-              <h1>
-                aaasadasasdaasdasdaaaa <br></br>
-                aaaasaasdasdasaaaaaasdasdasdasasd
+            <div className=" flex items-center flex-col mt-4 md:mt-0  font-Josefin tracking-wide font-semibold justify-center md:justify-start ">
+              <div>
+                <h1 className="text-center font-extrabold text-[1.2rem]">
+                  Design + Development
+                </h1>
+              </div>
+              <h1 className=" text-center md:text-start font-medium ">
+                clean,modern design - optimized for performance
               </h1>
             </div>
           </div>
 
-          <div className="flex-col items-center flex-grow flex md:flex-row">
+          <div className="flex-col     mt-5 font-Josefin tracking-wide font-semibold   justify-center  items-center flex-grow flex md:flex-row">
             <div className="w-[30%] flex justify-center ">
-              <svg
-                className=" w-[3rem] h-[3rem]"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-                />
-              </svg>
+              <FontAwesomeIcon className="w-10 h-10" icon={faMobile} />
             </div>
 
-            <div className="flex justify-center md:justify-start w-[100%] md:w-[50%]">
+            <div className="flex flex-col  mt-4 md:mt-0  font-Josefin tracking-wide  justify-center  items-center  md:justify-start w-[100%] md:w-[80%]">
               {" "}
-              <h1>asdasaaaaaaaaaaaaaadasd</h1>
+              <div>
+                {" "}
+                <h1 className="text-center text-[1.2rem] font-extrabold ">
+                  Always Responsive
+                </h1> 
+              </div>
+              <h1 className=" text-center md:text-start font-medium ">
+                A responsive design makes your website accessible <br /> to all
+                users,regardless of their device.
+              </h1>
             </div>
           </div>
-          <div className="flex-col items-center flex-grow flex md:flex-row">
-            <div className="md:w-[30%] flex justify-center ">
-              <svg
-                className=" w-[3rem] h-[3rem] "
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-                />
-              </svg>
+          <div className="flex-col mt-5  justify-center items-center flex-grow flex md:flex-row">
+            <div className="w-[30%] flex justify-center ">
+              <FontAwesomeIcon className="w-10 h-10" icon={faCode} />
             </div>
-            <div className=" flex justify-center md:justify-start w-[100%] md:w-[50%] ">
-              <h1>asdaaaaaaaaaaaaaaaaaaaaaaaaaasd</h1>
+
+            <div className=" flex flex-col text-start mt-4 md:mt-0 font-Josefin tracking-wide font-semibold  justify-center md:justify-start w-[100%] md:w-[80%] ">
+              <div>
+                {" "}
+                <h1 className="text-center font-extrabold text-[1.2rem]">Technology </h1>
+              </div>
+              <h1 className=" text-center md:text-start font-medium ">
+                Combined all the latest technology to a progressive website
+              </h1>
             </div>
           </div>
         </div>
 
         {/*  image 2BOX */}
 
-        <div className="flex-grow flex  gap-y-3 md:gap-y-16  items-center flex-col  justify-center ">
+        <div className="flex-grow flex mt-8 md:mt-0  gap-y-3 md:gap-y-16  items-center flex-col  justify-center ">
           <div className="flex gap-x-2 md:gap-x-16    ">
-            <Image src="/html.png" height="110" width="110"></Image>
+            <Image src="/html.png" height="100" width="100"></Image>
 
-            <Image src="/css.png" height="110" width="110"></Image>
+            <Image src="/css.png" height="100" width="100"></Image>
 
-            <Image src="/javascript.png" height="110" width="110"></Image>
+            <Image src="/javascript.png" height="100" width="100"></Image>
           </div>
           <div className="flex gap-x-2 md:gap-x-16  ">
             <Image src="/bootstrap.png" height="110" width="110"></Image>
@@ -185,6 +182,68 @@ const Body = ({ data }) => {
             <Image src="/mongodb.png" height="110" width="110"></Image>
           </div>
         </div>
+      </div>
+      {/* PROJECT  */}
+      <div className=" mt-2 justify-center items-center flex flex-col w-full h-[60vh]">
+        <div>
+          <h1 className="text-[2rem] m-2 ">My Project</h1>
+        </div>
+
+        <div className="flex flex-col md:flex-row border-2 self-start   w-[100%]  ">
+          <div className=" flex justify-center md:w-[50%]  ">
+            {" "}
+            <Image src="/social.jpg" height="250" width="250"></Image>
+          </div>
+          <div className=" m-2 flex justify-center items-center">
+            {" "}
+            <h1>asdasdasdasasdasdasdasdasdasdasdasdasd</h1>
+          </div>
+        </div>
+      </div>
+
+      <div className=" flex-col flex bg-red-200 md:flex-row h-[60vh]">
+        <div className="flex justify-center items-center gap-8  border-2 flex-col md:w-[50%] ">
+          <input className="w-[50%] h-10"></input>
+          <input className="w-[50%] h-10"></input>
+          <input className="w-[50%] h-10"></input>
+        </div>
+
+        <div className="  flex flex-grow border-red-800 border-2 justify-center items-center  ">
+          <textarea className="h-[50%] w-[50%]"></textarea>
+        </div>
+      </div>
+
+      {/* FOOTER */}
+      <div className=" flex p-5 bg-slate-700 h-[30vh] flex-col md:flex-row">
+        <div className=" md:w-[30%]  gap-5 flex justify-center items-center">
+          <Link href="https://www.facebook.com/skiller70/">
+            <button>
+              {" "}
+              <FontAwesomeIcon
+                className="w-9 h-9 text-white"
+                icon={faFacebook}
+              />
+            </button>
+          </Link>
+
+          <Link href="https://github.com/skiller70">
+            <button>
+              {" "}
+              <FontAwesomeIcon className="w-9 h-9 text-white" icon={faGithub} />
+            </button>
+          </Link>
+
+          <Link href="https://www.instagram.com/luckyskiller/?hl=en">
+            <button>
+              {" "}
+              <FontAwesomeIcon
+                className="w-9 h-9 text-white"
+                icon={faInstagram}
+              />
+            </button>
+          </Link>
+        </div>
+        <div></div>
       </div>
     </>
   );
