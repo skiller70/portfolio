@@ -51,11 +51,9 @@ const Body = ({ data }) => {
             </motion.button>
 
             <p className="p-2 tracking-wide mt-3 font-semibold text-[#334155] font-Josefin md:p-0 text-[1.5rem]">
-              i am Self taught programmer who is able to
+              front-end, back-end (MERN stack)
               <br />
-              realise projects from the ground up. <br /> I am well versed in
-              javascript language and <br /> I dont give up until I solve the
-              problem.
+             
             </p>
           </div>
         </div>
@@ -77,17 +75,22 @@ const Body = ({ data }) => {
           <Image src="/about.jpg" width="600" height="450"></Image>
         </div>
 
-        <div className="flex md:w-[50%] justify-center md:mt-[7%] ">
-          <div className="">
-            <h1 className="text-[2.5rem] text-center md:text-start ">
+        <div className="flex flex-col md:w-[50%] justify-start md:mt-[7%] ">
+          
+            <h1 className=" pt-6 text-[2.5rem] text-[#334155] text-center md:text-start font-Secular ">
               About me
             </h1>
-            <p className=" ">
-              Hello, I’m a Patrick, web-developer based on Paris. <br />I have
-              rich experience in web site design & building <br />
-              and customization. Also I am good at
+            
+
+           
+            <p className=" text-center md:text-start p-5 font-Josefin font-semibold text-[#334155]  tracking-wide text-[1.5rem] ">
+              I am a self taught (mostly). <br /> I love learning new technology
+            and also  <br />  i build good foundation of full stack Development. <br />
+              I have more than 6 year experience in basic computer software and
+              hardware. <br />I have spent a lots of time in cyber cafe
             </p>
-          </div>
+            
+        
         </div>
       </div>
 
@@ -98,60 +101,63 @@ const Body = ({ data }) => {
           width="1500"
           height="800"
         ></Image> */}
-      <div className="  flex flex-grow flex-row justify-center  text-[2rem] ">
+      <div className="pt-6 pb-3  text-[#334155] font-Secular flex flex-grow flex-row justify-center  text-[2.5rem] ">
         My Skills
       </div>
 
-      <div className="flex  flex-col md:flex-row  h-auto md:h-[100vh]">
-        <div className=" flex  flex-col  flex-grow">
+      <div className="flex flex-col md:flex-row  h-auto md:h-[100vh]">
+        <div className=" flex   flex-col  flex-grow">
           {/* 2BOX */}
-          <div className="flex-col  mt-5 items-center flex-grow flex md:flex-row">
-            <div className="w-[30%] flex justify-center ">
+          <div className="flex-col     mt-5 font-Josefin tracking-wide font-semibold  justify-center  items-center flex-grow flex md:flex-row">
+            <div className=" flex flex-grow  justify-center ">
               <FontAwesomeIcon className="w-10 h-10" icon={faPaintBrush} />
             </div>
-            <div className=" flex items-center flex-col mt-4 md:mt-0  font-Josefin tracking-wide font-semibold justify-center md:justify-start ">
-              <div>
-                <h1 className="text-center font-extrabold text-[1.2rem]">
+            <div className=" flex flex-col  mt-4 md:mt-0  font-Josefin tracking-wide flex-grow justify-center  items-center  md:justify-start   ">
+              
+                <h1 className="text-center  text-[#334155]  font-extrabold text-[1.2rem]">
                   Design + Development
                 </h1>
-              </div>
+              
               <h1 className=" text-center md:text-start font-medium ">
-                clean,modern design - optimized for performance
+                clean,modern design - optimized for performance.
               </h1>
             </div>
           </div>
 
           <div className="flex-col     mt-5 font-Josefin tracking-wide font-semibold   justify-center  items-center flex-grow flex md:flex-row">
-            <div className="w-[30%] flex justify-center ">
+            <div className=" flex flex-grow justify-center ">
               <FontAwesomeIcon className="w-10 h-10" icon={faMobile} />
             </div>
 
-            <div className="flex flex-col  mt-4 md:mt-0  font-Josefin tracking-wide  justify-center  items-center  md:justify-start w-[100%] md:w-[80%]">
+            <div className="flex flex-col  mt-4 md:mt-0  font-Josefin tracking-wide flex-grow justify-center  items-center  md:justify-start   ">
               {" "}
               <div>
                 {" "}
-                <h1 className="text-center text-[1.2rem] font-extrabold ">
+                <h1 className=" text-[#334155]  text-center text-[1.4rem] font-extrabold ">
                   Always Responsive
-                </h1> 
+                </h1>
               </div>
               <h1 className=" text-center md:text-start font-medium ">
                 A responsive design makes your website accessible <br /> to all
                 users,regardless of their device.
               </h1>
-            </div>
+            </div>  
           </div>
+
           <div className="flex-col mt-5  justify-center items-center flex-grow flex md:flex-row">
-            <div className="w-[30%] flex justify-center ">
+            <div className="flex-grow flex justify-center ">
               <FontAwesomeIcon className="w-10 h-10" icon={faCode} />
             </div>
 
-            <div className=" flex flex-col text-start mt-4 md:mt-0 font-Josefin tracking-wide font-semibold  justify-center md:justify-start w-[100%] md:w-[80%] ">
+            <div className=" flex flex-col  mt-4 md:mt-0  font-Josefin tracking-wide flex-grow justify-center  items-center  md:justify-start  ">
               <div>
                 {" "}
-                <h1 className="text-center font-extrabold text-[1.2rem]">Technology </h1>
+                <h1 className=" text-[#334155]  text-center text-[1.4rem] font-extrabold ">
+                 Technology{" "}
+                </h1>
               </div>
-              <h1 className=" text-center md:text-start font-medium ">
-                Combined all the latest technology to a progressive website
+              <h1 className=" text-center md:text-start font-medium">
+                Combined all the latest technology to a progressive <br /> website.
               </h1>
             </div>
           </div>
@@ -160,7 +166,7 @@ const Body = ({ data }) => {
         {/*  image 2BOX */}
 
         <div className="flex-grow flex mt-8 md:mt-0  gap-y-3 md:gap-y-16  items-center flex-col  justify-center ">
-          <div className="flex gap-x-2 md:gap-x-16    ">
+          <div className="flex gap-x-5 md:gap-x-16    ">
             <Image src="/html.png" height="100" width="100"></Image>
 
             <Image src="/css.png" height="100" width="100"></Image>
@@ -172,7 +178,7 @@ const Body = ({ data }) => {
 
             <Image src="/reactjs.png" height="110" width="110"></Image>
 
-            <Image src="/nextjs.png" height="110" width="110"></Image>
+            <Image src="/nextjs.png" height="110" width="110"></Image>  
           </div>
           <div className="flex gap-x-2 md:gap-x-16  ">
             <Image src="/nodejs.png" height="110" width="110"></Image>
@@ -184,20 +190,29 @@ const Body = ({ data }) => {
         </div>
       </div>
       {/* PROJECT  */}
-      <div className=" mt-2 justify-center items-center flex flex-col w-full h-[60vh]">
+      <div className=" mt-2 justify-center items-center flex flex-col w-full h-auto">
         <div>
-          <h1 className="text-[2rem] m-2 ">My Project</h1>
+          <h1 className="text-[2.5rem] text-[#334155]  font-Secular m-2 ">My Project</h1>
         </div>
 
-        <div className="flex flex-col md:flex-row border-2 self-start   w-[100%]  ">
-          <div className=" flex justify-center md:w-[50%]  ">
+        <div className="flex flex-col md:flex-row self-start  w-[100%]  ">
+        <div className=" m-2 flex text-center flex-col justify-center md:w-[50%] ">
             {" "}
-            <Image src="/social.jpg" height="250" width="250"></Image>
+            <h1 className="text-[1.5rem]  font-Secular text-[#334155]">Blog App</h1> 
+            <h1 className="text-center font-Josefin tracking-wide  font-semibold text-[#334155]  "> <br />
+            
+            MERN stack app where a user can creates an account and upload blog posts and comments/likes on the post i have create this project without any route. the whole process just on single page 
+            </h1>
+            <div className="text-[#334155]  font-light pt-2 font-Secular hover:text-blue-500  ">
+            <Link href="https://main--remarkable-macaron-2714af.netlify.app/"  > Click here to see live project </Link>
+            </div>
           </div>
-          <div className=" m-2 flex justify-center items-center">
+          
+          <div className=" flex justify-center flex-grow   ">
             {" "}
-            <h1>asdasdasdasasdasdasdasdasdasdasdasdasd</h1>
+            <Image src="/social.jpg" height="300"  width="400"></Image>
           </div>
+        
         </div>
       </div>
 

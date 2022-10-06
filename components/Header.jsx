@@ -8,7 +8,7 @@ import {faBars,faXmark} from "@fortawesome/free-solid-svg-icons"
 import { motion } from "framer-motion";
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const mHidden = `  hidden  text-white`;
   const mDisplay = ` pt-2 text-[1.2rem] md:hidden text-white`;
