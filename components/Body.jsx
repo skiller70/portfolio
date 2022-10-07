@@ -47,7 +47,7 @@ const Body = ({ data }) => {
             >
               {" "}
               <Link href="/about">
-                <h2 className="font-Secular px-5   text-[1.0.5rem] py-1.5">
+                <h2 className="font-Secular px-5   text-[1.5rem] py-1.5">
                   Contact
                 </h2>
               </Link>
@@ -60,7 +60,7 @@ const Body = ({ data }) => {
             >
               {" "}
               <Link href="/about">
-                <h2 className=" font-Secular  px-2.5    text-[1.0.5rem] py-1.5">
+                <h2 className=" font-Secular  px-2.5    text-[1.5rem] py-1.5">
                   Know More
                 </h2>
               </Link>
