@@ -17,14 +17,15 @@ const Body = ({ data }) => {
   return (
     <>
       {/* LANDING PAGE */}
-      <div className="flex-col md:flex-row flex  h-auto md:h-[100vh]  ">
-        <div className="flex mt-32  justify-center  items-center md:flex-grow">
-          <div className=" p-2 md:p-0 mb-2 flex flex-col">
+      <div className="flex-col md:flex-row flex    h-auto  md:h-[80vh]  ">
+      
+          
+          <div className=" md:text-start text-center mt-20 md:mt-0 justify-center items-center  w-[100%] md:w-[50%] flex flex-col">
             <motion.h1
-              initial={{ x: -360 }}
+              initial={{ x: -360 }} 
               animate={{ x: 0 }}
               transition={{ delay: 0.1 }}
-              className=" font-title text-[2rem] m-0.5"
+              className=" font-title text-[#334155] text-[2rem]"
             >
               {" "}
               i am Lucky singh, a <br />
@@ -32,33 +33,50 @@ const Body = ({ data }) => {
                 initial={{ x: 0 }}
                 animate={{ x: -500 }}
                 transition={{ delay: 0.1 }}
-                className="text-[4rem]   font-Secular text-[#581c87]"
+                className="text-[3rem]  text-center md:text-start tracking-wider font-Secular text-transparent  bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
               >
                 web developer{" "}
               </motion.span>
             </motion.h1>
-            <motion.button
-              initial={{ scale: 0 }}
+
+          <div className=" -ml-32">
+          <motion.button  
+              initial={{ scale: 0 }}  
               animate={{ scale: 1 }}
-              className="ml-1 p-2 rounded-xl self-start mb-2 bg-[#db2777] text-white"
+              className="py-0.5 rounded-xl  bg-indigo-500 hover:bg-[#db2777] text-white"
             >
               {" "}
               <Link href="/about">
-                <h2 className="font-Acme  font-bold text-[1.2rem] p-1.5">
+                <h2 className="font-Secular px-5   text-[1.0.5rem] py-1.5">
+                  Contact
+                </h2>
+              </Link>
+            </motion.button>
+            
+            <motion.button
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              className=" rounded-xl py-0.5 ml-5  bg-indigo-500 hover:bg-[#db2777] text-white"
+            >
+              {" "}
+              <Link href="/about">
+                <h2 className=" font-Secular  px-2.5    text-[1.0.5rem] py-1.5">
                   Know More
                 </h2>
               </Link>
             </motion.button>
+          </div>
 
-            <p className="p-2 tracking-wide mt-3 font-semibold text-[#334155] font-Josefin md:p-0 text-[1.5rem]">
+     
+            <p className="p-2   tracking-wide mt-3 font-semibold text-[#334155] font-Josefin md:p-0 text-[1.5rem]">
               front-end, back-end (MERN stack)
               <br />
              
             </p>
           </div>
-        </div>
+      
 
-        <div className="p-2 md:p-0 justify-center items-center flex md:flex-grow">
+        <div className="  pt-5 md:pt-12  px-5 md:px-0 justify-center items-center flex md:flex-grow">
           <Image
             src="/finalLanding.jpg"
             alt="Picture of the author"
@@ -114,11 +132,11 @@ const Body = ({ data }) => {
             </div>
             <div className=" flex flex-col  mt-4 md:mt-0  font-Josefin tracking-wide flex-grow justify-center  items-center  md:justify-start   ">
               
-                <h1 className="text-center  text-[#334155]  font-extrabold text-[1.2rem]">
+                <h1 className="text-center mb-2 text-[#334155]  font-light  font-Secular text-[1.2rem]">
                   Design + Development
                 </h1>
               
-              <h1 className=" text-center md:text-start font-medium ">
+              <h1 className="text-[1.3rem]  text-center  text-[#475569]  md:text-start font-semibold ">
                 clean,modern design - optimized for performance.
               </h1>
             </div>
@@ -133,11 +151,11 @@ const Body = ({ data }) => {
               {" "}
               <div>
                 {" "}
-                <h1 className=" text-[#334155]  text-center text-[1.4rem] font-extrabold ">
+                <h1 className=" mb-2  text-center text-[1.4rem]  text-[#334155]  font-light  font-Secular  ">
                   Always Responsive
                 </h1>
               </div>
-              <h1 className=" text-center md:text-start font-medium ">
+              <h1 className="text-[1.3rem]  text-center text-[#475569] md:text-start font-semibold ">
                 A responsive design makes your website accessible <br /> to all
                 users,regardless of their device.
               </h1>
@@ -152,11 +170,11 @@ const Body = ({ data }) => {
             <div className=" flex flex-col  mt-4 md:mt-0  font-Josefin tracking-wide flex-grow justify-center  items-center  md:justify-start  ">
               <div>
                 {" "}
-                <h1 className=" text-[#334155]  text-center text-[1.4rem] font-extrabold ">
+                <h1 className="  mb-2 text-center text-[1.5rem]  text-[#334155]  font-light  font-Secular ">
                  Technology{" "}
                 </h1>
               </div>
-              <h1 className=" text-center md:text-start font-medium">
+              <h1 className=" text-[1.3rem] text-center text-[#475569] md:text-start font-semibold">
                 Combined all the latest technology to a progressive <br /> website.
               </h1>
             </div>
@@ -199,7 +217,7 @@ const Body = ({ data }) => {
         <div className=" m-2 flex text-center flex-col justify-center md:w-[50%] ">
             {" "}
             <h1 className="text-[1.5rem]  font-Secular text-[#334155]">Blog App</h1> 
-            <h1 className="text-center font-Josefin tracking-wide  font-semibold text-[#334155]  "> <br />
+            <h1 className="text-center text-[1.3rem] font-Josefin tracking-wide  font-semibold text-[#334155]  "> <br />
             
             MERN stack app where a user can creates an account and upload blog posts and comments/likes on the post i have create this project without any route. the whole process just on single page 
             </h1>
@@ -208,23 +226,24 @@ const Body = ({ data }) => {
             </div>
           </div>
           
-          <div className=" flex justify-center flex-grow   ">
+          <div className=" flex justify-center flex-grow   "> 
             {" "}
             <Image src="/social.jpg" height="300"  width="400"></Image>
           </div>
         
         </div>
       </div>
-
-      <div className=" flex-col flex bg-red-200 md:flex-row h-[60vh]">
-        <div className="flex justify-center items-center gap-8  border-2 flex-col md:w-[50%] ">
-          <input className="w-[50%] h-10"></input>
-          <input className="w-[50%] h-10"></input>
-          <input className="w-[50%] h-10"></input>
+{/* INPUT */}
+      <div className=" flex-col flex bg-[#cbd5e1] md:flex-row h-[60vh]">
+        <div className="flex mt-5 justify-center items-center gap-8   flex-col md:w-[50%] ">
+          <input placeholder="Your Name" className="w-[50%] rounded-2xl pl-5  placeholder:text-center h-10"></input>
+          <input placeholder="Your Email"  className="w-[50%] h-10 rounded-2xl pl-5   placeholder:text-center"></input>
+          <input placeholder="Contact No"  className="w-[50%] h-10 rounded-2xl pl-5  placeholder:text-center"></input>
         </div>
 
-        <div className="  flex flex-grow border-red-800 border-2 justify-center items-center  ">
-          <textarea className="h-[50%] w-[50%]"></textarea>
+        <div className="  flex  flex-col flex-grow  justify-center items-center  ">
+          <textarea placeholder="message" className="h-[50%] pl-5 pt-2 w-[60%] rounded-2xl md:mt-20 placeholder:text-center placeholder:pt-2"></textarea>
+            <button className=" mt-5 rounded-xl bg-[#db2777] hover:bg-indigo-500 font-Secular text-white px-7 py-1">Send</button>
         </div>
       </div>
 
@@ -258,7 +277,12 @@ const Body = ({ data }) => {
             </button>
           </Link>
         </div>
-        <div></div>
+        <div className="flex flex-grow justify-center flex-col items-center  ">
+          <h1 className=" text-[1.2rem]  text-white font-Secular"> Getting touch is easy!</h1>
+          <h1 className="text-white font-Josefin"> singhlucky007007@gmail.com</h1>
+          <h1 className="text-white  font-Josefin"> +919137068283 </h1>
+
+        </div>
       </div>
     </>
   );
