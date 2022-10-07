@@ -25,10 +25,10 @@ const Body = ({ data }) => {
               initial={{ x: -360 }} 
               animate={{ x: 0 }}
               transition={{ delay: 0.1 }}
-              className=" font-title text-[#334155] text-[2rem]"
+              className=" px-1 md:px-0 font-title tracking-tighter text-[#334155] text-[2rem]"
             >
               {" "}
-              i am Lucky singh, a <br />
+              i am Lucky singh,a <br />
               <motion.span
                 initial={{ x: 0 }}
                 animate={{ x: -500 }}
