@@ -39,11 +39,11 @@ const Body = ({ data }) => {
               </motion.span>
             </motion.h1>
 
-          <div className=" -ml-32">
+          <div className=" md:-ml-16">
           <motion.button  
               initial={{ scale: 0 }}  
               animate={{ scale: 1 }}
-              className="py-0.5 rounded-xl  bg-indigo-500 hover:bg-[#db2777] text-white"
+              className="py-0.5 rounded-xl   bg-indigo-500 hover:bg-[#db2777] text-white"
             >
               {" "}
               <Link href="/about">
